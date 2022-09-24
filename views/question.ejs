@@ -1,0 +1,45 @@
+<%-include ('./partials/header.ejs')%>
+
+<body>
+  <%-include ('./partials/navbar.ejs')%>
+
+  <div class="container">
+    <hr>
+    <h1><%=question.title%></h1>
+    <p><%=question.description%></p>
+    <hr>
+
+    <form method="POST" action="/answer">
+
+      <label for="colFormLabelLg" class="col-sm-2 col-form-label col-form-label-lg">Answer &#128209</label>
+
+      <textarea placeholder="Type your answer" class="form-control required" name="questionBody" rows="5" maxlength="5000" required></textarea><br>
+
+      <input type="hidden" name="question" value="<%=question.id%>">
+
+      <button type="submit" class="btn btn-primary" class="alert alert-success" role="alert">Answer</button>
+
+    </form>
+
+    <hr>
+    <h3>Reply</h3>
+    <hr>
+    <% answers.forEach(answer => {%>
+    <br>
+
+    <div class="card">
+      <div class="card-body">
+        <p><%=answer.questionBody%></p>
+      </div>
+
+    </div>
+
+    <% })%>
+
+  </div>
+
+
+
+</body>
+
+<%-include ('./partials/footer.ejs')%>

@@ -1,0 +1,16 @@
+body {
+  background-color: #eceff1;
+}
+
+#form-ask {
+  margin-top: 5vh;
+}
+
+textarea {
+  resize: none;
+}
+
+.spacingTop {
+  margin-top: 5vh;
+  padding: auto;
+}

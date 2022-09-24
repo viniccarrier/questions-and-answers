@@ -1,0 +1,19 @@
+{
+  "name": "askme",
+  "version": "1.0.0",
+  "description": "Uma plataforma de Perguntas e Resposta",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Vinicius Carrier",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "mysql2": "^2.3.3",
+    "save": "^2.5.0",
+    "sequelize": "^6.23.0"
+  }
+}
